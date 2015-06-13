@@ -19,8 +19,11 @@ class EpisodeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        descTextView.textContainer.lineFragmentPadding = 0
+        descTextView.textContainerInset = UIEdgeInsetsZero
+        
         titleLabel.text = "Pilot"
-        descTextView.text = "Algum texto gigante!"
     }
 
     override func didReceiveMemoryWarning() {
