@@ -20,7 +20,7 @@ class EpisodeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = "Pilot"
-
+        descTextView.text = "Algum texto gigante!"
     }
 
     override func didReceiveMemoryWarning() {
