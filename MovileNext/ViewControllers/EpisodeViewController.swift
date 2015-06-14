@@ -23,7 +23,9 @@ class EpisodeViewController: UIViewController {
         descTextView.textContainer.lineFragmentPadding = 0
         descTextView.textContainerInset = UIEdgeInsetsZero
         
+        //teste
         titleLabel.text = "Pilot"
+        //coverImageView.image = UIImage(named: "bg")
     }
 
     override func didReceiveMemoryWarning() {
