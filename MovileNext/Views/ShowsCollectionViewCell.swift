@@ -19,5 +19,8 @@ class ShowsCollectionViewCell: UICollectionViewCell {
         for (text, image) in show {
             showTitle.text = text
         }
+        
     }
+    
+    
 }

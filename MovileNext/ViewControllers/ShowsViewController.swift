@@ -12,7 +12,9 @@ class ShowsViewController: UIViewController, UICollectionViewDelegate {
 
     @IBOutlet weak var showCollection: UICollectionView!
     
-    let allShows = [ ["Game of Thrones": "x"] , ["American Horor History" : "y"]]
+    let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
+    
+    let allShows = [ ["GoT": "x"] , ["American Horor History" : "y"], ["GoT": "x"] , ["American Horor History" : "y"], ["GoT": "x"] , ["American Horor History" : "y"], ["GoT": "x"] , ["American Horor History" : "y"], ["GoT": "x"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,7 @@ class ShowsViewController: UIViewController, UICollectionViewDelegate {
     
     //defini a quantidade de elementos que terão na tela
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 9
     }
     
     //defini a exibição (itera) esses elementos na tela
@@ -41,5 +43,26 @@ class ShowsViewController: UIViewController, UICollectionViewDelegate {
         
         return cell
     }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        
+        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+        
+        let itemSize = flowLayout.itemSize.width + flowLayout.minimumInteritemSpacing
+        let maxPerRow = floor((collectionView.bounds.width) / itemSize)
+        let usedSpace = itemSize * maxPerRow
+        
+        let additionalSpace = flowLayout.minimumInteritemSpacing * maxPerRow
+        
+        let sideSpace = floor(((collectionView.bounds.width - usedSpace) + additionalSpace) / (maxPerRow + 1))
+        
+        
+        
+        let space = floor((collectionView.bounds.width - usedSpace) / 4)
+        
+        return UIEdgeInsets(top: flowLayout.sectionInset.top, left: sideSpace, bottom: flowLayout.sectionInset.bottom, right: sideSpace)
+    }
+    
+    
 
 }
