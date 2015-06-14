@@ -8,11 +8,17 @@
 
 import UIKit
 
+// SETAR O STYLE NO STORYBOARD O STYLE, APONTANDO PARA A ESSA CLASSE
+
 class EpisodeTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        textLabel?.textColor = UIColor.grayColor()
+        textLabel?.font = UIFont.systemFontOfSize(15)
+        
+        detailTextLabel?.textColor = UIColor.mup_textColor()
+        detailTextLabel?.font = UIFont.systemFontOfSize(18)
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

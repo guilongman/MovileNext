@@ -16,6 +16,10 @@
 		CE10CE4D1B2CAE640066047A /* UIColor+MovileNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10CE4C1B2CAE640066047A /* UIColor+MovileNext.swift */; };
 		CE10CE4F1B2CAFDA0066047A /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10CE4E1B2CAFDA0066047A /* CustomNavigationController.swift */; };
 		CE10CE511B2CB1540066047A /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10CE501B2CB1540066047A /* EpisodeViewController.swift */; };
+		CE497F181B2DBEBF00967F11 /* SeasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE497F171B2DBEBF00967F11 /* SeasonViewController.swift */; };
+		CE497F1A1B2DCC9700967F11 /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE497F191B2DCC9700967F11 /* EpisodeTableViewCell.swift */; };
+		CE497F1C1B2DD5B000967F11 /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE497F1B1B2DD5B000967F11 /* ShowsViewController.swift */; };
+		CE497F1E1B2DFAB000967F11 /* ShowsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE497F1D1B2DFAB000967F11 /* ShowsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,10 @@
 		CE10CE4C1B2CAE640066047A /* UIColor+MovileNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+MovileNext.swift"; sourceTree = "<group>"; };
 		CE10CE4E1B2CAFDA0066047A /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		CE10CE501B2CB1540066047A /* EpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
+		CE497F171B2DBEBF00967F11 /* SeasonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonViewController.swift; sourceTree = "<group>"; };
+		CE497F191B2DCC9700967F11 /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		CE497F1B1B2DD5B000967F11 /* ShowsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
+		CE497F1D1B2DFAB000967F11 /* ShowsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowsCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF762D3D25C7F9A51D63A87C /* MovileNext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovileNext.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -184,6 +192,8 @@
 			children = (
 				CE10CE4E1B2CAFDA0066047A /* CustomNavigationController.swift */,
 				CE10CE501B2CB1540066047A /* EpisodeViewController.swift */,
+				CE497F171B2DBEBF00967F11 /* SeasonViewController.swift */,
+				CE497F1B1B2DD5B000967F11 /* ShowsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -206,6 +216,8 @@
 		F6FF356A1F8677CFE843F84B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE497F191B2DCC9700967F11 /* EpisodeTableViewCell.swift */,
+				CE497F1D1B2DFAB000967F11 /* ShowsCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -333,11 +345,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE497F1A1B2DCC9700967F11 /* EpisodeTableViewCell.swift in Sources */,
+				CE497F1C1B2DD5B000967F11 /* ShowsViewController.swift in Sources */,
 				B96B09453D6285BDA9A378E9 /* AppDelegate.swift in Sources */,
+				CE497F1E1B2DFAB000967F11 /* ShowsCollectionViewCell.swift in Sources */,
 				CE10CE511B2CB1540066047A /* EpisodeViewController.swift in Sources */,
 				CE10CE4F1B2CAFDA0066047A /* CustomNavigationController.swift in Sources */,
 				19E516393F7CF15146240503 /* Storyboards.swift in Sources */,
 				64E4F194B655588224CB79E2 /* Main.storyboard in Sources */,
+				CE497F181B2DBEBF00967F11 /* SeasonViewController.swift in Sources */,
 				CE10CE4D1B2CAE640066047A /* UIColor+MovileNext.swift in Sources */,
 				4745F602D9FD72B1B3351BC1 /* LaunchScreen.xib in Sources */,
 			);
